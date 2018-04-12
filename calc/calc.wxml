@@ -1,0 +1,63 @@
+<view class='content'>
+  <view class='layout-top'>
+    <view class='input'>
+      {{inputData}}
+    </view>
+    <view class='output'>
+      {{outputData}}
+    </view>
+  </view>
+  <view class='layout-bottom'>
+    <view class='calcGroup'>
+      <view class='calcMode {{calcClass16}}' bindtap='click16'>HEX</view>
+      <text class='calcValue'>{{hex}}</text>
+    </view>
+    <view class='calcGroup'>
+      <view class='calcMode {{calcClass10}}' bindtap='click10'>DEC</view>
+      <text class='calcValue'>{{dec}}</text>
+    </view>
+    <view class='calcGroup'>
+      <view class='calcMode {{calcClass8}}' bindtap='click8'>OCT</view>
+      <text class='calcValue'>{{oct}}</text>
+    </view>
+    <view class='calcGroup'>
+      <view class='calcMode {{calcClass2}}' bindtap='click2'>BIN</view>
+      <text class='calcValue'>{{bin}}</text>
+    </view>
+    <view class='btnGroup'>
+      <view class='item enable' bindtap="clickSymbo" id="{{idequal}}">{{idequal}}</view>
+      <view class='item enable' bindtap="clickSymbo" id="{{idadd}}">{{idadd}}</view>
+      <view class='item enable' bindtap="clickSymbo" id="{{idsubtract}}">{{idsubtract}}</view>
+      <view class='item {{calcMode==10?"enable":"disable"}}' bindtap="clickSymbo" id="{{idmultiply}}">{{idmultiply}}</view>
+      <view class='item {{calcMode==10?"enable":"disable"}}' bindtap="clickSymbo" id="{{iddivide}}">{{iddivide}}</view>
+    </view>
+    <view class='btnGroup'>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id7}}">{{id7}}</view>
+      <view class='item {{calcMode>=10?"enable":"disable"}}' bindtap="clickNumber" id="{{id8}}">{{id8}}</view>
+      <view class='item {{calcMode>=10?"enable":"disable"}}' bindtap="clickNumber" id="{{id9}}">{{id9}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{ida}}">{{ida}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{idb}}">{{idb}}</view>
+    </view>
+    <view class='btnGroup'>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id4}}">{{id4}}</view>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id5}}">{{id5}}</view>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id6}}">{{id6}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{idc}}">{{idc}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{idd}}">{{idd}}</view>
+    </view>
+    <view class='btnGroup'>
+      <view class='item {{calcMode>=2?"enable":"disable"}}' bindtap="clickNumber" id="{{id1}}">{{id1}}</view>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id2}}">{{id2}}</view>
+      <view class='item {{calcMode>=8?"enable":"disable"}}' bindtap="clickNumber" id="{{id3}}">{{id3}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{ide}}">{{ide}}</view>
+      <view class='item {{calcMode>=16?"enable":"disable"}}' bindtap="clickNumber" id="{{idf}}">{{idf}}</view>
+    </view>
+    <view class='btnGroup'>
+      <view class='item  {{calcMode>=2?"enable":"disable"}}' bindtap="clickNumber" id='{{id0}}'>{{id0}}</view>
+      <view class='item disable'></view>
+      <view class='item {{calcMode==10?"enable":"disable"}}' bindtap="clickNumber" id='{{idpoint}}'>{{idpoint}}</view>
+      <view class='item enable' bindtap="clickBtn" id='{{idclean}}'>{{idclean}}</view>
+      <view class='item enable' bindtap="clickBtn" id='{{idback}}'>{{idback}}</view>
+    </view>
+  </view>
+</view>

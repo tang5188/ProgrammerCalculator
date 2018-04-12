@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "calc/calc"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#90ee90",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Programmer计算器",
+    "backgroundColor": "#00ff00",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}
