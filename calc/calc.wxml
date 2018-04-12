@@ -60,4 +60,5 @@
       <view class='item enable' bindtap="clickBtn" id='{{idback}}'>{{idback}}</view>
     </view>
   </view>
+  <label class='git'>Github:tang5188/ProgrammerCalculator</label>
 </view>

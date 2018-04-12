@@ -125,3 +125,8 @@ page {
 .disable:active {
   background-color: lightgreen;
 }
+
+.git {
+  color: blue;
+  margin-top: 2px;
+}
